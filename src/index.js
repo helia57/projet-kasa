@@ -5,6 +5,7 @@ import Accueil from './pages/Accueil'
 import Header from './components/Header'
 //import Footer from './components/Footer'
 import Error from './components/Error'
+import './styles/Error.css'
 import Apropos from './pages/Apropos'
 import './styles/header.css'
 
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route path="/Apropos" element={<Apropos />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

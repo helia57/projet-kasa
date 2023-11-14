@@ -4,13 +4,13 @@ import Logo from '../../assets/Logo.png'
  
 function Header() {
     return (
-        <navContainer>
+        <navContainer className="navContainer">
             <div className="boiteLogo">
                 <img src={Logo} alt="logo kasa" height={68} width={210} />
             </div>
             <nav className="navBar">
-                <Link to="/">Accueil</Link>
-                <Link to="/Apropos">A propos</Link>
+                <Link className="textNavBar" to="/">Accueil</Link>
+                <Link className="textNavBar" to="/Apropos">A propos</Link>
             </nav>
         </navContainer>
     )
