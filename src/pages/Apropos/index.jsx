@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
  
-function Survey() {
+function Apropos() {
     const { questionNumber } = useParams()
  
     return (
@@ -11,4 +11,4 @@ function Survey() {
     )
 }
 
-export default Survey
+export default Apropos 

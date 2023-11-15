@@ -1,0 +1,31 @@
+
+h4 {
+    display: flex;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    justify-content: center;
+    filter: brightness(1);
+    padding-top: 47px;
+      
+}
+.CardPaysage {
+    display: flex;
+    justify-content: center;
+
+}
+
+.containerCardPaysage {
+    display: flex;
+    width: 1240px;
+    height: 223px;
+    background-image: url('../assets/paysage_mer.png');
+    background-position-y: 50%;
+    justify-content: center;
+    margin: 45px 74px;
+    border-radius: 25px;
+    opacity: 0.9;
+    filter: brightness(70%);
+}

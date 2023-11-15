@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    box-sizing: content-box;
+    max-width: 1440px;
+    margin: 45px 200px;
+}
+
+

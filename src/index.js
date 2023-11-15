@@ -8,6 +8,8 @@ import Error from './components/Error'
 import './styles/Error.css'
 import Apropos from './pages/Apropos'
 import './styles/header.css'
+import './styles/Accueil.css'
+import './styles/cardPaysage.css'
 
 
 

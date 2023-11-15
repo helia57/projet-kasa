@@ -1,9 +1,14 @@
+import CardPaysage from "../../components/CardPaysage";
 
 
 function Accueil() {
     return (
       <div>
-        <h1> Page d'accueil 🏠</h1>
+        <CardPaysage></CardPaysage>
+        <h2> Page d'accueil 🏠</h2>
+        <h3> sous-titre</h3>
+        
+
       </div>
     )
 }

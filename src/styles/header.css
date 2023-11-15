@@ -1,36 +1,41 @@
-.boiteLogo {
-    display: flex;
-    padding-left: 0px 60px;
-    margin-top: 45px;
-    
 
-}
-.img {
-    height: 68px;
-    width: 210px;
-}
+
 .navContainer {
     
     display: flex;
     flex-direction: row;
-    
+    width: 1240px;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 45px;
+    padding: 0px 78px;
 }
+.boiteLogo {
+    display: flex;
+    padding-left: 0px 60px;
+}
+.img {
+    display: flex;
+    align-content: baseline;
+    height: 68px;
+    width: 210px;
+}    
 .navBar {
     display: flex;
     flex-direction: row;
+    gap: 57px;
+    margin: 17px 0px;
+   
+
+}
+.textNavBar {
+    display: flex;
     color: #FF6060;
+    text-decoration: none;
     text-align: right;
     font-family: Montserrat;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    gap: 57px;
-
-}
-.textNavBar {
-    color: #FF6060;
-    text-decoration: none;
+        &:hover {text-decoration: #FF6060 underline;}
+    
 }
