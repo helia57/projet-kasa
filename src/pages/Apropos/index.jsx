@@ -1,13 +1,18 @@
-import { useParams } from 'react-router-dom'
+import CardMontagne from "../../components/CardMontagne"
+
+
+
  
 function Apropos() {
-    const { questionNumber } = useParams()
+   
  
     return (
-        <div>
+        <main>
+            <CardMontagne></CardMontagne>
+
             <h1>Questionnaire 🧮</h1>
-            <h2>Question {questionNumber}</h2>
-        </div>
+            
+        </main>
     )
 }
 

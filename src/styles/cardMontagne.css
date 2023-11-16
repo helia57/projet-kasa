@@ -11,17 +11,22 @@ h4 {
     padding-top: 47px;
       
 }
+.CardMontagne {
+    display: flex;
+    justify-content: center;
+    width: 1240px;
+   
 
-
+}
 img {
     display: flex;
 }
 
-.containerCardPaysage {
+.containerCardMontagne {
     display: flex;
     width: 1240px;
     height: 223px;
-    background-image: url('../assets/paysage_mer.png');
+    background-image: url('../assets/paysage-montagne.png');
     background-position-y: 50%;
     justify-content: center;
     border-radius: 25px;

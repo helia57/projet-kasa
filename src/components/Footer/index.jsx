@@ -1,13 +1,14 @@
-
-import Logo_Footer from '../../assets/D_Footer.png'
-
+import LogoFooterDesktop from '../../assets/D_Footer_Desktop.png'
 
 function Footer() {
     return (
-        <Footer>
-            <img src={Logo_Footer} alt="logo footer kasa" height={68} width={210} />
-        </Footer>
+        <div className="containerFooter">
+           <img src={LogoFooterDesktop} alt="logo kasa, copiright"  />  
+            <div>
+
+            </div>
+        </div>
     )
 }
- 
-export default Footer
+
+export default Footer 

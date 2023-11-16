@@ -1,8 +1,24 @@
+* {
+        
+        
+    box-sizing: border-box; /*  bordure et remplissage défini pour la page */
+    margin: 0px;
+}
 body {
     display: flex;
-    box-sizing: content-box;
-    max-width: 1440px;
-    margin: 45px 200px;
+    flex-direction: column;
+    width: 100%;
+    margin: auto; /*permet une marge blanche sur large desktop*/
+    max-width: 1440px; /*taille maximum de l'affichage*/
+    min-width: 320px; /*taille minimum de l'affichage*/
+    gap:30px
 }
 
-
+main {          /*gère les marges interrieures*/
+    display:flex; 
+    flex-direction: column;
+    width: 1240px;
+    margin: 0px 100px;
+    gap: 35px
+    
+}

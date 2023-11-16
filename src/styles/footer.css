@@ -1,0 +1,8 @@
+.containerFooter {
+    display: flex;
+    width: 100%;
+    height: 209px;
+    padding: 66px 464px 29px 463px;
+    align-items: center;
+    background-color: black;
+}

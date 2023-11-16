@@ -1,15 +1,14 @@
 import CardPaysage from "../../components/CardPaysage";
+import Gallery from "../../components/gallery";
 
 
 function Accueil() {
     return (
-      <div>
+      <main>
         <CardPaysage></CardPaysage>
-        <h2> Page d'accueil 🏠</h2>
-        <h3> sous-titre</h3>
+        <Gallery></Gallery>
         
-
-      </div>
+      </main>
     )
 }
   

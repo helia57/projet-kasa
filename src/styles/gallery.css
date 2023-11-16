@@ -1,0 +1,23 @@
+ul {
+    display: flex;
+    width: 1240px;
+    
+    border-radius: 25px;
+    background: #F6F6F6;
+    gap: 50px;
+    display:grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: 340px 340px 340px 340px 340px 340px 340px;
+    padding: 50px 56px;
+   
+    list-style-type: none;
+   
+}
+
+li {
+    
+    
+    height: 340px;
+    background-color:#FF6060 ;
+    border-radius: 10px;
+}
