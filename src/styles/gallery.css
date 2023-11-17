@@ -1,4 +1,5 @@
-ul {
+
+ul.containerGallery {
     display: flex;
     width: 1240px;
     
@@ -16,8 +17,31 @@ ul {
 
 li {
     
-    
+    display: flex;
     height: 340px;
     background-color:#FF6060 ;
     border-radius: 10px;
+}
+@media (max-width: 375px) {
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        gap: 22px;
+    }
+        
+    li {
+        display: flex;
+        width: 340px;
+        height: 255px;
+        background-color:#FF6060 ;
+        border-radius: 10px;
+    }  
+    span {
+        display: flex;
+    }
+        
+       
+    
 }

@@ -1,6 +1,5 @@
 * {
-        
-        
+       
     box-sizing: border-box; /*  bordure et remplissage défini pour la page */
     margin: 0px;
 }
@@ -21,4 +20,24 @@ main {          /*gère les marges interrieures*/
     margin: 0px 100px;
     gap: 35px
     
+}
+@media (max-width: 375px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto; /*permet une marge blanche sur large desktop*/
+        max-width: 375px; /*taille maximum de l'affichage mobile*/
+        
+        gap:30px
+    }
+    
+    main {          /*gère les marges interrieures*/
+        display:flex; 
+        flex-direction: column;
+        width: 350px;
+        margin: 0px 12px;
+        gap: 22px
+        
+    }
 }

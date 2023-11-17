@@ -7,7 +7,6 @@ h4 {
     font-style: normal;
     font-weight: 500;
     justify-content: center;
-    filter: brightness(1);
     padding-top: 47px;
       
 }
@@ -30,6 +29,7 @@ img {
     background-position-y: 50%;
     justify-content: center;
     border-radius: 25px;
-    opacity: 0.9;
-    filter: brightness(70%);
+   
+    
+    
 }

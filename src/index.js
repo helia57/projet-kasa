@@ -5,6 +5,7 @@ import Accueil from './pages/Accueil'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
+
 import './styles/Error.css'
 import Apropos from './pages/Apropos'
 import './styles/header.css'
@@ -12,6 +13,9 @@ import './styles/Accueil.css'
 import './styles/cardPaysage.css'
 import './styles/gallery.css'
 import './styles/cardMontagne.css'
+import './styles/footer.css'
+import './styles/Collapse.css'
+
 
 
 
