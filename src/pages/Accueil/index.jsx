@@ -1,12 +1,16 @@
-import CardPaysage from "../../components/CardPaysage";
-import Gallery from "../../components/gallery";
+import CardPaysage from "../../components/CardPaysage"
+import Gallery from "../../components/gallery"
+import Cards from "../../components/Cards"
+
 
 
 function Accueil() {
     return (
       <main>
         <CardPaysage></CardPaysage>
-        <Gallery></Gallery>
+        <Gallery>
+          <Cards></Cards>
+        </Gallery>
         
       </main>
     )

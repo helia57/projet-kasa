@@ -5,16 +5,20 @@ import Accueil from './pages/Accueil'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
+import Apropos from './pages/Apropos'
+import Accomodation from './pages/Accomodation'
+
+
 
 import './styles/Error.css'
-import Apropos from './pages/Apropos'
 import './styles/header.css'
 import './styles/Accueil.css'
 import './styles/cardPaysage.css'
 import './styles/gallery.css'
 import './styles/cardMontagne.css'
 import './styles/footer.css'
-import './styles/Collapse.css'
+import './styles/collapse.css'
+import './styles/carousel.css'
 
 
 
@@ -26,6 +30,7 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
+        <Route path="/Accomodation" element={<Accomodation />} />
         <Route path="/Apropos" element={<Apropos />} />
         <Route path="*" element={<Error />} />
       </Routes>

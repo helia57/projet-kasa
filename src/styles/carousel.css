@@ -1,0 +1,44 @@
+
+
+
+
+
+
+.container-Slider {
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1240px;
+    height: 415px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    margin:0px 150px;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+
+.activ-anim{
+   opacity:1; 
+   
+}
+
+.btn-slide {
+    
+    margin: 0px 110px;
+    height: 60px;
+    width: 110px;
+    background-color: aqua;
+    
+} 
+
+   

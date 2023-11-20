@@ -1,7 +1,7 @@
 import CardMontagne from "../../components/CardMontagne"
 import Collapse from "../../components/Collapse"
 
-export default function Apropos({title, content})  {
+export default function Apropos()  {
 
 	
 	const aboutDatas = [

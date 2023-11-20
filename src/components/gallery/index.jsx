@@ -1,38 +1,22 @@
+import Datas from "../../assets/Logements/Datas"
+import Cards from "../Cards"
 
 
 
-function gallery() {
+export default function Gallery() {
+
     return (
-        <ul className="containerGallery">
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-            <li><span></span></li>
-        </ul>
+        <main className='home_gallery'>
+            {Datas.map(data => {
+                return (
+                    <Cards
+                        key={data.id}
+                        id={data.id}
+                        title={data.title}
+                        cover={data.cover}
+                    />
+                )
+            })}
+        </main>
     )
 }
-
-
-export default gallery
