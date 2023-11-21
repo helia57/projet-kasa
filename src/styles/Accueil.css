@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 * {
        
     box-sizing: border-box; /*  bordure et remplissage défini pour la page */
@@ -18,9 +19,53 @@ main {          /*gère les marges interrieures*/
     flex-direction: column;
     width: 1240px;
     margin: 0px 100px;
-    gap: 35px
+    gap: 50px
     
 }
+.gallery-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    width: 1240px;
+    padding: 56px 50px;
+    
+
+}
+.gallery_cards {
+    display: flex;
+    text-decoration: none;
+    width: 340px;
+    height: 340px;
+}
+img.flat {
+    display: flex;
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+}
+
+h4 {
+    display: inline-block;
+    position: relative;
+    bottom: -270px; right: 312px;
+    width: 300px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+    text-decoration: none;
+}
+
+
+
 @media (max-width: 375px) {
     body {
         display: flex;

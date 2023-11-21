@@ -6,7 +6,7 @@ import Cards from "../Cards"
 export default function Gallery() {
 
     return (
-        <main className='home_gallery'>
+        <div className='gallery-wrapper'>
             {Datas.map(data => {
                 return (
                     <Cards
@@ -17,6 +17,6 @@ export default function Gallery() {
                     />
                 )
             })}
-        </main>
+        </div>
     )
 }
