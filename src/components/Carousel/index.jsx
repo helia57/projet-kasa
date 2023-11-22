@@ -10,7 +10,7 @@ export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(0);
   const { id } = useParams();
 
-  // Utilisez un effet pour mettre à jour le slideIndex lorsque l'ID change
+  // Utilisation de useEffet pour mettre à jour le slideIndex lorsque l'ID change, puisqu'on clique depuis la page accueil. 
   useEffect(() => {
     const currentLogement = datas.find((logement) => logement.id === id);
     if (currentLogement) {
@@ -21,26 +21,20 @@ export default function Slider() {
   const currentLogement = datas.find((logement) => logement.id === id);
 
   const nextSlide = () => {
-    setSlideIndex((slideIndex + 1) % currentLogement.pictures.length);
+    setSlideIndex((slideIndex + 1) % currentLogement.pictures.length); //Utilisation de l'opérateur modulo pour boucler les slides du carousel
   };
 
   const prevSlide = () => {
     setSlideIndex((slideIndex - 1 + currentLogement.pictures.length) % currentLogement.pictures.length);
   };
 
-  console.log("Current Logement ID:", currentLogement?.id);
-  console.log("Current Image Paths:", currentLogement?.pictures);
-
-  if (!currentLogement) {
-    return <div>Logement introuvable</div>; // Gérez le cas où le logement n'est pas trouvé
+    if (!currentLogement) {
+    return <div>Logement introuvable</div>; // Gestion du cas où le logement n'est pas trouvé
   }
 
   return (
     <div className="container-Slider">
-      <CountSlider
-        currentSlide={slideIndex}
-        totalSlides={currentLogement.pictures.length}
-      />
+      
       <div className="slide">
         <img
           src={currentLogement.pictures[slideIndex]}
@@ -50,6 +44,11 @@ export default function Slider() {
       </div>
       <BtnSlider moveSlide={nextSlide} direction={'next'} />
       <BtnSlider moveSlide={prevSlide} direction={'prev'} />
+      <CountSlider
+        currentSlide={slideIndex}
+        totalSlides={currentLogement.pictures.length}
+      />
+     
     </div>
   );
 }

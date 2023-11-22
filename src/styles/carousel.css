@@ -5,20 +5,27 @@
 
 
 .container-Slider {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
     position: relative;
     flex-direction: column;
     flex-wrap: wrap;
     width: 1240px;
     height: 415px;
     overflow: hidden;
+    margin-bottom: 50px;
 }
 
 .slide {
+    display: flex;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
     
-    margin:0px 150px;
+
+    
 }
 .slide img {
     width: 100%;
@@ -32,13 +39,43 @@
    
 }
 
-.btn-slide {
-    
-    margin: 0px 110px;
+.next {
+    display: inline-flex;
+    position: relative;
+    bottom: -167px; right: -1160px;
     height: 60px;
     width: 110px;
-    background-color: aqua;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    
     
 } 
+.prev {
+    display: inline-flex;
+    position: relative;
+    bottom: -107px; right: -28px;
+    height: 60px;
+    width: 110px;
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+ } 
 
-   
+.count-slider {
+    display: inline-flex;
+    position:relative;
+    bottom: -265px; right: -615px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    color:#FFFFFF;
+
+}
+ 
