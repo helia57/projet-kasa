@@ -1,75 +1,55 @@
+import React, { useState, useEffect } from 'react';
+import BtnSlider from '../BtnSlider';
+import CountSlider from '../CountSlider';
+import datas from '../../assets/Logements/Datas';
+import { useParams } from 'react-router-dom';
 
-import React, { useState } from 'react'
-import datas from "../../assets/Logements/Datas"
-import BtnSlider from "../BtnSlider"
 
 
+export default function Slider() {
+  const [slideIndex, setSlideIndex] = useState(0);
+  const { id } = useParams();
 
-export default function Slider () {
- 
+  // Utilisez un effet pour mettre à jour le slideIndex lorsque l'ID change
+  useEffect(() => {
+    const currentLogement = datas.find((logement) => logement.id === id);
+    if (currentLogement) {
+      setSlideIndex(0);
+    }
+  }, [id]);
 
-  const [slideIndex, setSlideIndex] = useState (1)
+  const currentLogement = datas.find((logement) => logement.id === id);
 
   const nextSlide = () => {
-      if (slideIndex !== datas.length) {
-        setSlideIndex(slideIndex + 1)
-      }
-      else if (slideIndex === datas.length) {
-        setSlideIndex(1)
-    }
-  }
+    setSlideIndex((slideIndex + 1) % currentLogement.pictures.length);
+  };
 
   const prevSlide = () => {
-      if (slideIndex !== 1) {
-        setSlideIndex(slideIndex - 1)
-      }
-      else if (slideIndex === 1) {
-        setSlideIndex(datas.length)
-    }
-  }
+    setSlideIndex((slideIndex - 1 + currentLogement.pictures.length) % currentLogement.pictures.length);
+  };
 
-  const moveDot = index => {
-    setSlideIndex (index)
+  console.log("Current Logement ID:", currentLogement?.id);
+  console.log("Current Image Paths:", currentLogement?.pictures);
+
+  if (!currentLogement) {
+    return <div>Logement introuvable</div>; // Gérez le cas où le logement n'est pas trouvé
   }
-  
 
   return (
-
-    <div className='container-Slider'>
-
-      {datas.map((data) => {
-
-        return (
-            <div 
-            key={data.id} 
-            className={slideIndex === + 1 ? 'slide active-anim' : 'slide' }
-            
-            >
-            
-               
-              <img 
-              src={data.pictures}
-              alt='appartement'
-              className='slide'
-              />
-            </div>
-        )      
-      })}
-      <BtnSlider moveSlide={nextSlide} direction={'next'} 
+    <div className="container-Slider">
+      <CountSlider
+        currentSlide={slideIndex}
+        totalSlides={currentLogement.pictures.length}
       />
-
-      <BtnSlider moveSlide={prevSlide} direction={'prev'} 
-      />
-      <div className='container-dots'>
-        {Array.from({length: 3}).map((item,index) => (
-          <div
-          onClick={() => moveDot(index + 1)}
-          className={datas === index ? "dot active" :"dot"}
-        
-
-          ></div>
-        ))}
+      <div className="slide">
+        <img
+          src={currentLogement.pictures[slideIndex]}
+          alt={`appartement ${currentLogement.id} - ${slideIndex + 1}`}
+          className="slide"
+        />
+      </div>
+      <BtnSlider moveSlide={nextSlide} direction={'next'} />
+      <BtnSlider moveSlide={prevSlide} direction={'prev'} />
     </div>
-    </div>
-  )
+  );
 }

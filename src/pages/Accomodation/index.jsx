@@ -1,14 +1,15 @@
-import Carousel from "../../components/Carousel";
-
-
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Carousel from '../../components/Carousel';
 
 function Accomodation() {
-    return (
-      <main>
-        <Carousel></Carousel>
-      </main>
-    )
-}
-  
+  const { id } = useParams();
 
-export default Accomodation
+  return (
+    <main>
+      <Carousel logementId={id} />
+    </main>
+  );
+}
+
+export default Accomodation;

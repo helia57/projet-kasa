@@ -17,7 +17,7 @@ export default function Collapse({title, content}) {
                     />
                 </h3>
                 <div className={toggle ? 'collapse_content' : 'collapse_content_hidden'}>
-                    {Array.isArray(content) ? content.map((item, index) => {
+                    {Array.isArray(content) ? content.map((item, index)  => {
                         return (
                             <p key={index}>{item}</p>
                         )

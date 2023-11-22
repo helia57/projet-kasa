@@ -30,7 +30,7 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/Accomodation" element={<Accomodation />} />
+        <Route path="/Accomodation/:id" element={<Accomodation />} />
         <Route path="/Apropos" element={<Apropos />} />
         <Route path="*" element={<Error />} />
       </Routes>

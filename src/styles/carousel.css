@@ -17,7 +17,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    opacity: 0;
+    
     margin:0px 150px;
 }
 .slide img {
@@ -28,7 +28,7 @@
   
 
 .activ-anim{
-   opacity:1; 
+   opacity:0.5; 
    
 }
 
