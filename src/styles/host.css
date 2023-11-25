@@ -1,0 +1,21 @@
+.host-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+   
+}
+.host-picture {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 64px;
+    height: 64px;
+    justify-content: flex-end;
+}
+.wrapper-notation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}

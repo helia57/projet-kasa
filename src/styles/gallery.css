@@ -1,4 +1,22 @@
 
+.title-wrapper {
+    display:flex;
+    flex-wrap: wrap;
+}
+.h4 {
+    display:flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: -270px; right: 312px;
+    width: 300px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; /* 25.668px */
+    text-decoration: none;
+}
 
 
 

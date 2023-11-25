@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -18,7 +18,11 @@ import './styles/gallery.css'
 import './styles/cardMontagne.css'
 import './styles/footer.css'
 import './styles/collapse.css'
-import './styles/carousel.css'
+import './styles/slider.css'
+import './styles/stars.css'
+import './styles/tag.css'
+import './styles/host.css'
+import './styles/Accomodation.css'
 
 
 
@@ -32,7 +36,8 @@ ReactDOM.render(
         <Route path="/" element={<Accueil />} />
         <Route path="/Accomodation/:id" element={<Accomodation />} />
         <Route path="/Apropos" element={<Apropos />} />
-        <Route path="*" element={<Error />} />
+        <Route path="/Error" element={<Error />} />
+        <Route path="*" element={<Navigate to="/Error" replace />} />
       </Routes>
       <Footer />
     </Router>
