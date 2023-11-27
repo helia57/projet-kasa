@@ -4,8 +4,12 @@ import arrow from "../../assets/arrow_up.svg";
 export default function Collapse({ title, content }) {
   const [toggle, setToggle] = useState(false);
 
+  const contentHeight = toggle ? 'auto' : '0';
+
+  const marginBottom = toggle ? 'auto' : '0';
+
   return (
-    <>
+    <div className="collapseHeight" style={{ height: contentHeight,marginBottom }}>
       <div className="collapse">
         <h3 className='collapse_title' onClick={() => setToggle(!toggle)}>
           {title}
@@ -23,6 +27,6 @@ export default function Collapse({ title, content }) {
           }) : content}
         </div>
       </div>
-    </>
+    </div>
   );
 }

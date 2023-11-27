@@ -30,7 +30,7 @@ main {          /*gère les marges interrieures*/
     gap: 50px;
     border-radius: 25px;
     background: #F6F6F6;
-    width: 1240px;
+    width: 100%;
     padding: 56px 50px;
     
 
@@ -52,8 +52,9 @@ img.flat {
 
 h4 {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
-    bottom: -270px; right: 312px;
+    bottom: 54px; right: -23px;
     width: 300px;
     color: #FFF;
     font-family: Montserrat;
@@ -63,7 +64,7 @@ h4 {
     line-height: 142.6%; /* 25.668px */
     text-decoration: none;
 }
-div {
+div,a, img {
     display: flex;
     flex-wrap: wrap;
 }

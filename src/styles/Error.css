@@ -1,27 +1,40 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
 .textError {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: #FF6060;
     font-family: Montserrat;
-    font-size: 288px;
+    font-size: 263px;
     font-style: normal;
     font-weight: 700;
-    margin: 70px 0px;
+    
 }
 .textRetourAccueil {
     display: flex;
     justify-content: center;
 }
-h2 {
+h2.error-Title {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: #FF6060;
     font-family: Montserrat;
     font-size: 36px;
     font-style: normal;
     font-weight: 500;
-    margin: 60px 0px;
+   
 }
-.containerErrror {
-    margin: 139px 0px;
+
+a.textRetourAccueil {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0px;
 }

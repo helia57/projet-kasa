@@ -1,60 +1,197 @@
 main {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin-bottom: 50px;
-}
+    width: 1240px;
+    justify-content: center;
+   
+}    
 .description {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
+    
 }
 .wrapper-presentation {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-content: flex-start;
 }
 .wrapper-notation {
     display: flex;
-    flex-direction: column reverse;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content:flex-end;
+    height: 150px;
 }
 .stars-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-p {
+p,span, img, a {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+   
 }
-h2.title-appart {
-    align-content: flex-start;
-}
-
-
-.wrapper-collapses {
+div.wrapper-collapses {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
-}
-.collapse {
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap;
+    height: 120px;
+    margin-bottom: 90px;
     justify-content: space-between;
-    gap: 10px;
+    
+   
 }
-.collapse_title {
-    width :90%;
+.collapseHeight {
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+}
+.h3.collapse_title {
+    display: flex;
+    width :100%;
     height: 39px;
     align-content: flex-end;
 }
-.collapse_content {
+div.collapse_content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    margin-bottom: 160px;
+    transition: visibility 0.5s ease-in-out,
+    opacity 0.4s ease-in-out,
+    height 0.4s ease-in-out; 
+    
+  
+}
+
+
+div.collapse {
+    
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    background-color: #F6F6F6;
+    color: #FF6060;
+    height: 50px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 30px 0px;
+    align-items: flex-start;
+    justify-content: center;
+    
+    
 }
+
+
+div.collapse_content_hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+   
+}
+.tags-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 865px;
+}
+
+.tag {
+    display: flex;
+    background-color:#FF6060;
+    color:#FFFFFF; 
+    border-radius: 25px;
+    width: 154px;
+    padding: 0px 10px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.title-appart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color:#FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 103px;
+}
+
+.sous-title-appart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 376px;
+    padding: 0px;
+    color:#FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.host-picture {
+    display: flex;
+    flex-wrap: wrap;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 45%;
+}
+.host-name {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93px;
+    height: 52px;
+    color:#FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+}
+.host-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;  
+}
+.stars-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 185px;
+    height: 36px; 
+    gap: 10px;
+}
+p {
+   
+    width: 100%;
+}   
+    

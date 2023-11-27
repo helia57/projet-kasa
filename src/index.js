@@ -15,14 +15,15 @@ import './styles/header.css'
 import './styles/Accueil.css'
 import './styles/cardPaysage.css'
 import './styles/gallery.css'
-import './styles/cardMontagne.css'
+import './styles/banner.css'
 import './styles/footer.css'
 import './styles/collapse.css'
 import './styles/slider.css'
 import './styles/stars.css'
-import './styles/tag.css'
 import './styles/host.css'
 import './styles/Accomodation.css'
+import './styles/Apropos.css'
+
 
 
 

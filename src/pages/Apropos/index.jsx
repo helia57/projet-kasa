@@ -1,4 +1,4 @@
-import CardMontagne from "../../components/CardMontagne"
+import Banner from "../../components/Banner"
 import Collapse from "../../components/Collapse"
 
 export default function Apropos()  {
@@ -30,12 +30,12 @@ export default function Apropos()  {
     return (
         <div>
 			<main>
-			<CardMontagne />
+			<Banner />
 			<div className='about_main'>
 				{aboutDatas.map(data => {
 					return (
 						<div key={data.id} className="about_main_collapse">
-							<Collapse style={{margin:'30px 0'}}  title={data.title} content={data.content} />
+							<Collapse style={{width:'90%',}}  title={data.title} content={data.content} />
 						</div>
 					)}
 				)}
