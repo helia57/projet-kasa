@@ -43,7 +43,7 @@
         &:hover {text-decoration: #FF6060 underline;}
     
 }
-@media (max-width: 375px) {
+@media (max-width: 667px) {
 
     .navContainer {
     
@@ -52,21 +52,23 @@
         flex-wrap: nowrap;
         width: 336px;
         align-items: center;
-        margin: 20px 20px;
+        margin: 0px 80px;
         padding: 0px 0px;
+        
         
     }
     .boiteLogo {
         display: flex;
-        height: 45px;
-        width: 305px;
+        width: 145px;
+        height: 47px;
         
         
     }
     .img {
         display: flex;
         align-content: baseline;
-        
+        width: 145px;
+        height: 47px;
         
     }    
     .navBar {
@@ -76,7 +78,7 @@
         width: 350px;
         margin: 17px 0px;
         padding: 0px 25px;
-        gap: 10px;
+        gap: 26px;
       
     }
     .textNavBar {

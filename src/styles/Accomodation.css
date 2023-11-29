@@ -42,8 +42,8 @@ div.wrapper-collapses {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 120px;
-    margin-bottom: 90px;
+   
+    margin-bottom: 200px;
     justify-content: space-between;
     
    
@@ -55,13 +55,13 @@ div.wrapper-collapses {
 }
 .h3.collapse_title {
     display: flex;
-    width :100%;
     height: 39px;
     align-content: flex-end;
 }
 div.collapse_content {
     display: flex;
     flex-direction: column;
+    position: relative;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 100%;
@@ -93,12 +93,13 @@ div.collapse {
     margin: 30px 0px;
     align-items: flex-start;
     justify-content: center;
-    
-    
+   
 }
 
 
 div.collapse_content_hidden {
+    display: flex;
+    flex-wrap: wrap;
     visibility: hidden;
     opacity: 0;
     height: 0;
@@ -114,6 +115,8 @@ div.collapse_content_hidden {
 
 .tag {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color:#FF6060;
     color:#FFFFFF; 
     border-radius: 25px;
@@ -141,7 +144,8 @@ div.collapse_content_hidden {
     font-weight: 500;
     letter-spacing: 0em;
     text-align: left;
-    height: 103px;
+    
+
 }
 
 .sous-title-appart {
@@ -150,7 +154,8 @@ div.collapse_content_hidden {
     flex-wrap: wrap;
     justify-content: flex-start;
     width: 376px;
-    padding: 0px;
+    height: 51px;
+    padding: 10px;
     color:#FF6060;
     font-family: Montserrat;
     font-size: 18px;
@@ -194,4 +199,107 @@ p {
    
     width: 100%;
 }   
+
+@media (max-width: 667px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        width: 667px;
+        margin: auto; /*permet une marge blanche sur large desktop*/
+        max-width: 475px; /*taille maximum de l'affichage mobile*/
+        gap:30px;
+        margin: 20px 20px;
+    }
     
+    main {          /*gère les marges interrieures*/
+         
+        flex-direction: column;
+        margin: 0px 20px;
+        gap: 27px;
+        width: 100%;
+        
+    }
+    .title-appart {
+        font-size: 18px;
+        font-weight: 500;
+       
+    }
+    h2 {
+        padding: 0px;
+    }
+    .sous-title-appart {
+        font-size: 14px;
+        padding: 0px;
+    }
+    
+
+    .tag {
+        width: 84px;
+        height: 18px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+
+    .host-name {
+        font-size: 12px;
+    }
+    div.wrapper-notation {
+        flex-direction: row-reverse;
+        width: 100%;
+        height: 90px;
+        justify-content: space-between;
+    }
+    .host-name {
+        display: flex;
+        width: 50px;
+        height: 33px;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .host-picture {
+        height: 32px;
+        width: 32px;
+    }
+    .host-container {
+        justify-content: center;
+    }
+
+    div.stars-container {
+        justify-content: flex-start;
+        width: 130px;
+        gap: 0px;
+
+    }
+    img.star {
+        height: 18px;
+        width: 18px;
+    }
+    div.wrapper-collapses {
+        width: 335px;
+        height: 100px;
+        margin-bottom: 27px;
+        
+
+    }
+    .collapseHeight {
+        flex-direction: column;
+        width: 335px;
+    }
+    .collapse {
+        margin: 0px;
+    }
+    .h3.collapse_title {
+        flex-direction: column;
+    }
+    div.collapse_content {
+        font-size: 13px;
+        line-height: 130%; 
+    }
+    .slide image {
+        width: 335px;
+        height: 255px;
+    }
+
+    
+}

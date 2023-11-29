@@ -36,8 +36,8 @@ const Accomodation = () => {
         </div>
       </div>
       <div className="wrapper-collapses">
-        <Collapse title="Description" content={currentLogement.description} style={{ width: '48%',}}/>
-        <Collapse title="Équipements" content={currentLogement.equipments} style={{ width: '48%',}}/>
+        <Collapse title="Description" content={currentLogement.description} />
+        <Collapse title="Équipements" content={currentLogement.equipments} />
       </div>
     </main>
   );

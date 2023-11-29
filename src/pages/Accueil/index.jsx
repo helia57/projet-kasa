@@ -1,13 +1,15 @@
-import CardPaysage from "../../components/CardPaysage"
+
 import Gallery from "../../components/gallery"
 import Cards from "../../components/Cards"
+import Banner from "../../components/Banner"
+import paysageMer from "../../assets/paysage_mer.png"
 
 
 
 function Accueil() {
     return (
       <main>
-        <CardPaysage></CardPaysage>
+        <Banner image={paysageMer}/>
         <Gallery>
           <Cards></Cards>
         </Gallery>
@@ -17,4 +19,4 @@ function Accueil() {
 }
   
 
-export default Accueil;
+export default Accueil

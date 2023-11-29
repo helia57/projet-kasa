@@ -8,7 +8,7 @@ export default function BtnSlider({ direction, moveSlide }) {
       onClick={moveSlide}
       className={direction === "next" ? "Btn-slide next" : "btn-slide prev"}
     >
-      <img src={direction === "next" ? rightArrow : leftArrow} alt="direction" />
+      <img className="imgBouton" src={direction === "next" ? rightArrow : leftArrow} alt="direction" />
     </button>
   );
 }

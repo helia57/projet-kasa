@@ -1,5 +1,6 @@
 import Banner from "../../components/Banner"
 import Collapse from "../../components/Collapse"
+import paysageMontagne from '../../assets/paysage-montagne.png'
 
 export default function Apropos()  {
 
@@ -28,20 +29,20 @@ export default function Apropos()  {
 	]
 
     return (
-        <div>
-			<main>
-			<Banner />
-			<div className='about_main'>
-				{aboutDatas.map(data => {
-					return (
-						<div key={data.id} className="about_main_collapse">
-							<Collapse style={{width:'90%',}}  title={data.title} content={data.content} />
-						</div>
-					)}
+        
+		<main>
+		<Banner image={paysageMontagne} text="Chez vous, partout et ailleurs"/>
+		<div className='about_main'>
+			{aboutDatas.map(data => {
+				return (
+					<div key={data.id} className="about_main_collapse">
+						<Collapse style={{width:'790px',}}  title={data.title} content={data.content} />
+					</div>
 				)}
-			</div>
-            </main>
-			
+			)}
 		</div>
+        </main>
+			
+		
 	)
 }
