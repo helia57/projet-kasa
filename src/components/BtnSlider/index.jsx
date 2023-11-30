@@ -1,6 +1,6 @@
-import React from "react";
-import rightArrow from "../../assets/rightArrow.svg";
-import leftArrow from "../../assets/leftArrow.svg";
+import React from "react"
+import rightArrow from "../../assets/rightArrow.svg"
+import leftArrow from "../../assets/leftArrow.svg"
 
 export default function BtnSlider({ direction, moveSlide }) {
   return (
@@ -10,5 +10,5 @@ export default function BtnSlider({ direction, moveSlide }) {
     >
       <img className="imgBouton" src={direction === "next" ? rightArrow : leftArrow} alt="direction" />
     </button>
-  );
+  )
 }

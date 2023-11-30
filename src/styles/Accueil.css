@@ -40,6 +40,7 @@ main {          /*gère les marges interrieures*/
     text-decoration: none;
     width: 340px;
     height: 340px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
 }
 img.flat {
     display: flex;
@@ -47,7 +48,8 @@ img.flat {
     height: 340px;
     border-radius: 10px;
     object-fit: cover;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+    opacity: 0.9;
+    mix-blend-mode: darken;
 }
 
 h4 {
@@ -106,6 +108,12 @@ div,a, img {
         text-decoration: none;
         width: 335px;
         height: 255px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
+
+
+        
+       
+        
     }
     img.flat {
         display: flex;
@@ -113,7 +121,11 @@ div,a, img {
         height: 255px;
         border-radius: 10px;
         object-fit: cover;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+        opacity: 0.9;
+        mix-blend-mode: darken;
+       
+        
+       
     }
     
     h4 {

@@ -1,0 +1,41 @@
+$color_1: #FFF;
+$font-family_1: Montserrat;
+$background-color_1: #FF6060;
+
+.title-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+.h4 {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	bottom: -270px;
+	right: 312px;
+	width: 300px;
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 142.6%;
+	text-decoration: none;
+}
+@media (max-width: 667px) {
+	ul {
+		display: flex;
+		flex-direction: column;
+		border-radius: 25px;
+		gap: 22px;
+	}
+	li {
+		display: flex;
+		width: 340px;
+		height: 255px;
+		background-color: $background-color_1;
+		border-radius: 10px;
+	}
+	span {
+		display: flex;
+	}
+}

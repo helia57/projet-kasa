@@ -1,0 +1,56 @@
+$color_1: #FF6060;
+$font-family_1: Montserrat;
+
+.textError {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 263px;
+	font-style: normal;
+	font-weight: 700;
+}
+.textRetourAccueil {
+	display: flex;
+	justify-content: center;
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	padding: 69px 0px;
+}
+h2.error-Title {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: $color_1;
+	font-family: $font-family_1;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 500;
+}
+a.textRetourAccueil {
+	display: flex;
+	flex-wrap: wrap;
+}
+@media (max-width: 667px) {
+	.textError {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-align: center;
+		font-size: 96px;
+		padding: 69px 0px;
+	}
+	h2.error-Title {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 18px;
+		text-align: center;
+	}
+	a.textRetourAccueil {
+		font-size: 14px;
+	}
+}

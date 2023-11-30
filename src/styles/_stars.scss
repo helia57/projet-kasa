@@ -1,0 +1,14 @@
+
+.stars-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 196px;
+	height: 36px;
+}
+img.star {
+	display: flex;
+	flex-wrap: nowrap;
+	width: 25px;
+	height: 25px;
+}

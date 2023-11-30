@@ -3,7 +3,7 @@ function Banner({ image, text }) {
       
         <div className="containerCard">
           <img className="montagne" src={image} alt="paysage"  />
-          <h2>{text}</h2>
+          <h1>{text}</h1>
         </div>
     )
 }

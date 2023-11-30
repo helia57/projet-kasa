@@ -1,0 +1,76 @@
+$color_1: #FF6060;
+$font-family_1: Montserrat;
+
+.navContainer {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px 0px;
+	padding: 0px 100px;
+}
+.boiteLogo {
+	display: flex;
+	padding-left: 0px 60px;
+	width: 210.322px;
+	height: 68px;
+}
+.img {
+	display: flex;
+	align-content: baseline;
+	height: 46px;
+	width: 145px;
+}
+.navBar {
+	display: flex;
+	flex-direction: row;
+	gap: 57px;
+	margin: 17px 0px;
+}
+.textNavBar {
+	display: flex;
+	color: $color_1;
+	text-decoration: none;
+	text-align: right;
+	font-family: $font-family_1;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	&__ hover {text-decoration: #FF6060 underline;}
+}
+@media (max-width: 667px) {
+	.navContainer {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 336px;
+		align-items: center;
+		margin: 0px 80px;
+		padding: 0px 0px;
+	}
+	.boiteLogo {
+		display: flex;
+		width: 145px;
+		height: 47px;
+	}
+	.img {
+		display: flex;
+		align-content: baseline;
+		width: 145px;
+		height: 47px;
+	}
+	.navBar {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		width: 350px;
+		margin: 17px 0px;
+		padding: 0px 25px;
+		gap: 26px;
+	}
+	.textNavBar {
+		display: flex;
+		font-size: 12px;
+	}
+}
