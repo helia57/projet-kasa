@@ -1,21 +1,59 @@
 .host-container {
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-end;
-   
-}
+    align-items: center;
+    
+} 
 .host-picture {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 64px;
     height: 64px;
-    justify-content: flex-end;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 45%;
+    align-self: center;
+   
 }
-.wrapper-notation {
+.host-name {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
+    width: 121px;
+    color:#FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
     justify-content: flex-end;
+    padding-right: 20px;
+   
+    
+    
+
+}
+
+@media (max-width: 667px) {
+    .host-name {
+        font-size: 12px;
+    }
+    .host-name {
+        display: flex;
+        width: 50px;
+        height: 56px;
+        flex-direction: column;
+        align-content: flex-start;
+    }
+
+    .host-picture {
+        height: 32px;
+        width: 32px;
+    }
+    .host-container {
+        justify-content: space-between;
+        width: 100px;
+    }
+
 }

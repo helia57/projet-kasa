@@ -87,9 +87,9 @@ div,a, img {
     main {          /*gère les marges interrieures*/
          
         flex-direction: column;
-        margin: 0px 20px;
+        margin: 0px 79px;
         gap: 19px;
-        width: 100%;
+        width: 335px;
         
     }
     

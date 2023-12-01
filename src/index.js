@@ -15,7 +15,7 @@ import './styles/stars.css'
 import './styles/host.css'
 import './styles/Accomodation.css'
 import './styles/Apropos.css'
-
+import './styles/tags.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

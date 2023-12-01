@@ -1,5 +1,6 @@
 import logoFooter from '../../assets/logoFooter.svg'
 
+
 function Footer() {
     return (
         <div className="containerFooter">
