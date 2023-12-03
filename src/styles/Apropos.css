@@ -68,15 +68,13 @@ div.collapse {
     align-content: center;
     justify-content: center;
     text-justify: auto;
-    bottom: 10px; 
     padding: 10px;
-    
     height: auto;
     border-radius: 10px;
     background-color: #F6F6F6;
-    transition: visibility 0.5s ease-in-out,
+    transition: visibility 0.05s ease-in-out,
     opacity 0.4s ease-in-out,
-    height 0.4s ease-in-out;
+    height 0.02s ease-in-out;
 }
 h3 {
     display: flex;
@@ -197,21 +195,16 @@ h3 {
     
     }
     .collapse_content {
-        display: flex;
-        flex-wrap: wrap;
+       
         position:relative;
         align-content: center;
         justify-content: center;
         text-justify: auto;
-        bottom: 10px; 
         padding: 10px;
-        
         height: auto;
         border-radius: 10px;
         background-color: #F6F6F6;
-        transition: visibility 0.5s ease-in-out,
-        opacity 0.4s ease-in-out,
-        height 0.4s ease-in-out;
+        
     }
     h3 {
         display: flex;

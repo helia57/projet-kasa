@@ -27,6 +27,7 @@ main {
     justify-content: flex-end;
     align-content:flex-end;
     height: 150px;
+    margin-top: 15px;
 }
 
 p,span, img, a {
@@ -34,11 +35,10 @@ p,span, img, a {
     flex-wrap: wrap;
    
 }
-div.wrapper-collapses {
+.wrapper-collapses {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
     margin-bottom: 200px;
     justify-content: space-between;
     
@@ -155,6 +155,9 @@ p {
         width: 335px;
         
     }
+    .wrapper-presentation {
+        margin-left: 60px;
+    }
     .title-appart {
         font-size: 18px;
         font-weight: 500;
@@ -168,17 +171,17 @@ p {
         padding: 0px;
     }
     
-    div.wrapper-notation {
+    .wrapper-notation {
         flex-direction: row-reverse;
-        width: 100%;
+        margin-left: 60px;
         height: 90px;
         justify-content: space-between;
         align-items: flex-end;
     }
-    div.wrapper-collapses {
+    .wrapper-collapses {
         width: 335px;
         height: 100px;
-        margin-bottom: 27px;
+        margin: 27px 60px;
     }
     .collapseHeight {
         flex-direction: column;

@@ -68,23 +68,21 @@ h4::after {
         background-position-y: 50%;
         justify-content: center;
         border-radius: 10px;
-        opacity: 0.7;
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
-        mix-blend-mode: darken;
+       
     }
  
     h4::after {
         font-size: 24px;
     }
     .containerCard {
-        display: flex;
+       
         width: 335px;
         height: 111px;
         object-fit: cover;
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
         object-position: center; 
         background-position-y: 43%;
-        margin:27px 50px 0px 0px;
+        margin:27px 50px 0px 50px;
         border-radius: 10px;
     }
 }
