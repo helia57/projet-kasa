@@ -6,7 +6,7 @@ import App from './App';
 
 import './styles/Error.css'
 import './styles/header.css'
-import './styles/Accueil.css'
+import './styles/SASS-CRACH/scss/_Accueil.scss'
 import './styles/gallery.css'
 import './styles/banner.css'
 import './styles/footer.css'

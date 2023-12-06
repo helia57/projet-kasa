@@ -6,29 +6,24 @@
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height: 415px;
     overflow: hidden;
-    
 }
-
 .slide {
     display: flex;
     flex-wrap: wrap;
-    position: absolute;
+    position: relative;
     object-fit: cover;
     width: 100%;
     height: 415px;
     border-radius: 25px;
-   
+    z-index: index 1;
 }
-
 .imgBouton {
     display: flex;
     flex-wrap: wrap;
     width: 46.68px;
     height: 79.2px;
 }
-  
 
 .activ-anim{
     display: flex;
@@ -40,38 +35,36 @@
 .next {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    bottom: -167px; right: -1130px;
-    height: 60px;
-    width: 110px;
+    position: absolute;
+    bottom: 156px; right: 104px;
+    width: calc(10% - 100%);
     background-color: transparent;
     border: none;
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
-    flex-shrink: 1;
+}
     
-} 
 .prev {
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    bottom: -107px; right: -28px;
-    height: 60px;
-    width: 110px;
+    position: absolute;
+    bottom: 156px; right: 83px;
+    width: calc(100% - 10%);
     background-color: transparent;
     border: none;
     padding: 10px 15px;
     font-size: 16px;
     cursor: pointer;
-    flex-shrink: 1;
- } 
+   
+
+} 
 
 .count-slider {
     display: flex;
     flex-wrap: wrap;
-    position:relative;
-    bottom: -265px; right: -615px;
+    position: absolute;
+    bottom: 17px; right: 575px;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
@@ -79,166 +72,66 @@
     letter-spacing: 0em;
     color:#FFFFFF;
     width: 50px;
+    
+} 
 
-}
-
-
-@media (max-width: 1374px) {
-
-    .next {
-        right: -1069px;
-    }
-
-    .count-slider {
-        right: -563px;
-    }
-}
-@media (max-width: 1338px) {
-
-    .next {
-        right: -1025px;
-    }
-
-    .count-slider {
-        right: -534px;
-    }
-}
-@media (max-width: 1291px) {
-
-    .next {
-        right: -968px;
-    }
-
-    .count-slider {
-        right: -533px;
-    }
-}
-@media (max-width: 1246px) {
-
-    .next {
-        right: -936px;
-    }
-
-    .count-slider {
-        right: -532px;
-    }
-}
-@media (max-width: 1203px) {
-
-    .next {
-        right: -879px;
-    }
-
-    .count-slider {
-        right: -531px;
-    }
-}
 @media (max-width: 1143px) {
 
     .next {
-        right: -816px;
+        right: 50px;
     }
 
     .count-slider {
-        right: -481px;
+        right: 481px;
     }
 }
 
 @media (max-width: 1081px) {
 
     .next {
-        right: -696px;
+        right: 58px;
     }
 
     .count-slider {
-        right: -402px;
+        right: 339px;
     }
 }
 @media (max-width: 964px) {
 
     .next {
-        right: -663px;
+        right: 72px;
+    }
+    .prev {
+        right: 53px;
     }
 
     .count-slider {
-        right: -383px;
+        right: 343px;
     }
 }
-@media (max-width: 930px) {
 
-    .next {
-        right: -613px;
-    }
 
-    .count-slider {
-        right: -358px;
-    }
-}
-@media (max-width: 879px) {
 
-    .next {
-        right: -560px;
-    }
-
-    .count-slider {
-        right: -325px;
-    }
-}
 @media (max-width: 826px) {
 
     .next {
-        right: -518px;
+        right: 63px;
     }
 
     .count-slider {
-        right: -298px;
+        right: 265px;
     }
 }
-@media (max-width: 826px) {
 
-    .next {
-        right: -477px;
-    }
 
-    .count-slider {
-        right: -271px;
-    }
-}
-@media (max-width: 739px) {
-
-    .next {
-        right: -440px;
-        
-    }
-    .imgBouton {
-        width: 30px;
-        height: 30px;
-    }
-
-    .count-slider {
-        right: -252px;
-    }
-}
-@media (max-width: 679px) {
-
-    .next {
-        right: -395px;
-        
-    }
-    .imgBouton {
-        width: 29px;
-        height: 29px;
-    }
-
-    .count-slider {
-        right: -255px;
-    }
-}
 @media (max-width: 667px) {
 
     .next {
-        right: -343px;
+        right: 43px;
         
+    }
+    .prev {
+        right: 35px;
     }
     .imgBouton {
         width: 28px;
@@ -246,7 +139,7 @@
     }
 
     .count-slider {
-        right: -155px;
+        right: 197px;
     }
     .container-Slider {
         margin-top: 20px;
@@ -256,33 +149,28 @@
 @media (max-width: 626px) {
 
     .next {
-        right: -281px;
-        top: 105px;
+        right: 32px;
+        top: 115px;
         
     }
     .prev {
-        right: 4px;
-        top: 47px;
+        right: 28px;
+        top: 115px;
         
     }
-    .imgBouton {
-        width: 28px;
-        height: 28px;
-    }
+  
 
     .count-slider {
-        top: 107px;
-        right: -155px;
+        top: 222px;
+        right: 148px;
+        font-size: 12px;
     }
     .slide {
         width: 100%;
-        height: 100%;
-    }
-    .container-Slider {
         height: 255px;
-        top: 7px;
-        right: -50px;
+       
     }
+    
     img.slide {
         width: 335px;
         height: 255px;

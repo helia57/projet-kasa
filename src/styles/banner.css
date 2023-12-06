@@ -82,7 +82,7 @@ h4::after {
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
         object-position: center; 
         background-position-y: 43%;
-        margin:27px 50px 0px 50px;
+        margin:27px 50px 0px 0px;
         border-radius: 10px;
     }
 }

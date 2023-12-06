@@ -135,17 +135,19 @@ h3 {
         display: flex;
         flex-direction: column;
         width: 667px;
-        max-width: 475px; /*taille maximum de l'affichage mobile*/
-        gap:0px;
-        margin: 20px 20px;
+        margin: auto; /*permet une marge blanche sur large desktop*/
+        max-width: 375px; /*taille maximum de l'affichage mobile*/
+        gap:30px;
+        padding: 20px 20px;
+       
     }
     main {          
         flex-direction: column;
-        margin: 0px 20px;
+        margin: 0px 0px;
         gap: 19px;
-        width: 100%;
+        width: 335px;
     }
-    div.collapse {
+    .collapse {
         display: flex;
         flex-wrap: wrap;
         background-color: #F6F6F6;
@@ -165,7 +167,7 @@ h3 {
     .collapseHeight {
         display: flex;
         flex-wrap: wrap;
-        
+        height: auto;
     }
     .about_main {
         display: flex;
@@ -245,7 +247,7 @@ h3 {
         gap: 5px;
         letter-spacing: 1px;
         visibility: visible;
-        opacity: 1;
+        opacity: 0.2;
         height: auto;
         padding: 10px;
         letter-spacing: 1px;

@@ -8,7 +8,7 @@
     height: auto;
     background-color: black;
     padding : 70px 0px;
-    margin-bottom: 70px;
+    margin-top: 50px;
     gap: 29px;
 } 
 .imageFooter {  
@@ -36,39 +36,11 @@ h5 {
 @media (max-width: 667px) {
    
     .containerFooter {
+        width: 375px;
+        margin: 19px -20px 20px -20px;
+    }
     
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        background-color: black;
-        margin: 19px 0px;
-        padding: 66px 120px 58px 121px;
-        
-    }
-    .imageFooter {  
-        display: flex; 
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 122px;
-        height: 40px;
-        margin: 0px 60px;
-        
-    }
     h5 {
-        display: flex;
-        flex-wrap: wrap;
-        height: 22px;
-        justify-content: center;
-        color: #FFF;
-        text-align: center;
-        font-family: Montserrat;
         font-size: 12px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 142.6%; /* 34.224px */
-        background-color: black;
-        border-radius: 0px;
     }
 }

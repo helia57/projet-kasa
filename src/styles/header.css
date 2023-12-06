@@ -46,45 +46,20 @@
 @media (max-width: 667px) {
 
     .navContainer {
-    
-        display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
-        width: 336px;
-        align-items: center;
-        margin: 0px 80px;
-        padding: 0px 0px;
-        
-        
+        margin: 0px;
+        padding: 0px;       
     }
     .boiteLogo {
-        display: flex;
         width: 145px;
         height: 47px;
-        
-        
     }
-    .img {
-        display: flex;
-        align-content: baseline;
-        width: 145px;
-        height: 47px;
-        
-    }    
+    
     .navBar {
-        display: flex;
-        flex-direction: row;
         justify-content:flex-end;
-        width: 350px;
-        margin: 17px 0px;
-        padding: 0px 25px;
         gap: 26px;
-      
     }
     .textNavBar {
-        display: flex;
-        font-size: 12px;
-        
-        
+       font-size: 12px;
     }
 }

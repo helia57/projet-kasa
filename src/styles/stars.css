@@ -12,7 +12,8 @@
     .stars-container {
         display: flex;
         justify-items: flex-start;
-        gap: 5px;
+        gap: 7px;
+        width: 224px;
         justify-content: flex-start;
         
         

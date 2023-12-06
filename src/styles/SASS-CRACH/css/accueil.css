@@ -1,0 +1,153 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  max-width: 1440px;
+  min-width: 320px;
+  gap: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 1240px;
+  margin: 0px 100px;
+  gap: 50px;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  border-radius: 25px;
+  background: #F6F6F6;
+  width: 100%;
+  padding: 56px 50px;
+}
+
+.gallery_cards {
+  display: flex;
+  text-decoration: none;
+  width: 340px;
+  height: 340px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+img.flat {
+  display: flex;
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  object-fit: cover;
+  opacity: 0.9;
+  mix-blend-mode: darken;
+}
+
+h4 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  bottom: 54px;
+  right: -23px;
+  width: 300px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%;
+  text-decoration: none;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 667px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 667px;
+    margin: auto;
+    max-width: 475px;
+    gap: 30px;
+    margin: 20px 20px;
+  }
+  main {
+    flex-direction: column;
+    margin: 0px 79px;
+    gap: 19px;
+    width: 335px;
+  }
+  .gallery-wrapper {
+    flex-direction: row;
+    gap: 20px;
+    background: white;
+    padding: 0px 0px;
+  }
+  .gallery_cards {
+    display: flex;
+    text-decoration: none;
+    width: 335px;
+    height: 255px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  }
+  img.flat {
+    display: flex;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.9;
+    mix-blend-mode: darken;
+  }
+  h4 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 54px;
+    right: -23px;
+    width: 300px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration: none;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  a {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  img {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=accueil.css.map */
