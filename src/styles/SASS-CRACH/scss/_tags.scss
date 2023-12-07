@@ -1,0 +1,38 @@
+@import './_config';
+
+
+
+.tags-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 10px;
+	max-width: 865px;
+}
+.tag {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: $color_red;
+	color: $color_1;
+	border-radius: 25px;
+	width: 154px;
+	padding: 0px 10px;
+	height: 25px;
+	justify-content: center;
+	align-items: center;
+	font-family: $font-family_1;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+@media (max-width: 667px) {
+	.tag {
+		width: 84px;
+		height: 18px;
+		font-size: 10px;
+		border-radius: 5px;
+	}
+}

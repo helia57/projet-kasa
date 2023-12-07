@@ -1,5 +1,7 @@
-$color_1: #FF6060;
-$font-family_1: Montserrat;
+@import './_config';
+
+
+
 
 .host-container {
 	display: flex;
@@ -14,7 +16,7 @@ $font-family_1: Montserrat;
 	width: 64px;
 	height: 64px;
 	object-fit: cover;
-	object-position: center;
+	object-position: center; 
 	border-radius: 45%;
 	align-self: center;
 }
@@ -23,7 +25,7 @@ $font-family_1: Montserrat;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 121px;
-	color: $color_1;
+	color: $color_red;
 	font-family: $font-family_1;
 	font-size: 18px;
 	font-weight: 500;
@@ -34,7 +36,6 @@ $font-family_1: Montserrat;
 @media (max-width: 667px) {
 	.host-name {
 		font-size: 12px;
-		display: flex;
 		width: 50px;
 		height: 56px;
 		flex-direction: column;

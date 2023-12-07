@@ -6,7 +6,7 @@ export default function Collapse({ title, content }) {
 
   const contentHeight = toggle ? 'auto' : '0';
 
-  const marginBottom = toggle ? '60px' : '0';
+  const marginBottom = toggle ? '40px' : '0';
 
   return (
     <div className="collapseHeight" style={{ height: contentHeight,marginBottom }}>

@@ -4,18 +4,19 @@ import App from './App';
 
 
 
-import './styles/Error.css'
-import './styles/header.css'
+import './styles/SASS-CRACH/scss/_Error.scss'
+import './styles/SASS-CRACH/scss/_header.scss'
 import './styles/SASS-CRACH/scss/_Accueil.scss'
-import './styles/gallery.css'
-import './styles/banner.css'
-import './styles/footer.css'
-import './styles/slider.css'
-import './styles/stars.css'
-import './styles/host.css'
-import './styles/Accomodation.css'
-import './styles/Apropos.css'
-import './styles/tags.css'
+import './styles/SASS-CRACH/scss/style.scss'
+import './styles/SASS-CRACH/scss/_gallery.scss'
+import './styles/SASS-CRACH/scss/_banner.scss'
+import './styles/SASS-CRACH/scss/_footer.scss'
+import './styles/SASS-CRACH/scss/_slider.scss'
+import './styles/SASS-CRACH/scss/_stars.scss'
+import './styles/SASS-CRACH/scss/_host.scss'
+import './styles/SASS-CRACH/scss/_Accomodation.scss'
+import './styles/SASS-CRACH/scss/_Apropos.scss'
+import './styles/SASS-CRACH/scss/_tags.scss'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

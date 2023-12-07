@@ -1,11 +1,13 @@
-$color_1: #FF6060;
-$font-family_1: Montserrat;
+@import './_config';
+@import './style';
+
+
 
 .textError {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	color: $color_1;
+	color: $color_red;
 	font-family: $font-family_1;
 	font-size: 263px;
 	font-style: normal;
@@ -14,7 +16,7 @@ $font-family_1: Montserrat;
 .textRetourAccueil {
 	display: flex;
 	justify-content: center;
-	color: $color_1;
+	color: $color_red;
 	font-family: $font-family_1;
 	font-size: 18px;
 	font-style: normal;
@@ -25,7 +27,7 @@ h2.error-Title {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	color: $color_1;
+	color: $color_red;
 	font-family: $font-family_1;
 	font-size: 36px;
 	font-style: normal;
@@ -37,16 +39,12 @@ a.textRetourAccueil {
 }
 @media (max-width: 667px) {
 	.textError {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		text-align: center;
+		
 		font-size: 96px;
 		padding: 69px 0px;
 	}
 	h2.error-Title {
-		display: flex;
-		flex-wrap: wrap;
+		
 		font-size: 18px;
 		text-align: center;
 	}

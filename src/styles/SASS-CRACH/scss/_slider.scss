@@ -1,6 +1,7 @@
-$color_1: #FFFFFF;
-$font-family_1: Montserrat;
-$background-color_1: transparent;
+@import './_config';
+
+
+
 
 .container-Slider {
 	display: flex;
@@ -10,23 +11,17 @@ $background-color_1: transparent;
 	flex-direction: column;
 	flex-wrap: wrap;
 	width: 100%;
-	height: 415px;
 	overflow: hidden;
 }
 .slide {
 	display: flex;
 	flex-wrap: wrap;
-	position: absolute;
+	position: relative;
+	object-fit: cover;
 	width: 100%;
 	height: 415px;
 	border-radius: 25px;
-	img {
-		display: flex;
-		flex-wrap: wrap;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+	z-index: index 1;
 }
 .imgBouton {
 	display: flex;
@@ -42,39 +37,35 @@ $background-color_1: transparent;
 .next {
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
-	bottom: -167px;
-	right: -1130px;
-	height: 60px;
-	width: 110px;
-	background-color: $background-color_1;
+	position: absolute;
+	bottom: 156px;
+	right: 104px;
+	
+	background-color: $background-color_incolore;
 	border: none;
 	padding: 10px 15px;
 	font-size: 16px;
 	cursor: pointer;
-	flex-shrink: 1;
 }
 .prev {
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
-	bottom: -107px;
-	right: -28px;
-	height: 60px;
-	width: 110px;
-	background-color: $background-color_1;
+	position: absolute;
+	bottom: 156px;
+	right: 1088px;
+	
+	background-color: $background-color_incolore;
 	border: none;
 	padding: 10px 15px;
 	font-size: 16px;
 	cursor: pointer;
-	flex-shrink: 1;
 }
 .count-slider {
 	display: flex;
 	flex-wrap: wrap;
-	position: relative;
-	bottom: -265px;
-	right: -615px;
+	position: absolute;
+	bottom: 17px;
+	right: 575px;
 	font-family: $font-family_1;
 	font-size: 18px;
 	font-weight: 500;
@@ -83,130 +74,60 @@ $background-color_1: transparent;
 	color: $color_1;
 	width: 50px;
 }
-@media (max-width: 1374px) {
-	.next {
-		right: -1069px;
-	}
-	.count-slider {
-		right: -563px;
-	}
-}
-@media (max-width: 1338px) {
-	.next {
-		right: -1025px;
-	}
-	.count-slider {
-		right: -534px;
-	}
-}
-@media (max-width: 1291px) {
-	.next {
-		right: -968px;
-	}
-	.count-slider {
-		right: -533px;
-	}
-}
-@media (max-width: 1246px) {
-	.next {
-		right: -936px;
-	}
-	.count-slider {
-		right: -532px;
-	}
-}
-@media (max-width: 1203px) {
-	.next {
-		right: -879px;
-	}
-	.count-slider {
-		right: -531px;
-	}
-}
 @media (max-width: 1143px) {
 	.next {
-		right: -816px;
+		right: 41px;
+	}
+	.prev {
+		right: 736px;
 	}
 	.count-slider {
-		right: -481px;
+		right: 403px;
 	}
 }
 @media (max-width: 1081px) {
 	.next {
-		right: -696px;
+		right: 58px;
 	}
 	.count-slider {
-		right: -451px;
+		right: 339px;
 	}
 }
 @media (max-width: 964px) {
 	.next {
-		right: -663px;
+		right: 12px;
+	}
+	.prev {
+		right: 672px;
 	}
 	.count-slider {
-		right: -383px;
-	}
-}
-@media (max-width: 930px) {
-	.next {
-		right: -613px;
-	}
-	.count-slider {
-		right: -358px;
-	}
-}
-@media (max-width: 879px) {
-	.next {
-		right: -560px;
-	}
-	.count-slider {
-		right: -325px;
+		right: 331px;
 	}
 }
 @media (max-width: 826px) {
 	.next {
-		right: -518px;
-		right: -477px;
+		right: 18px;
+	}
+	.prev {
+		right: 484px;
 	}
 	.count-slider {
-		right: -298px;
-		right: -271px;
-	}
-}
-@media (max-width: 739px) {
-	.next {
-		right: -440px;
-	}
-	.imgBouton {
-		width: 30px;
-		height: 30px;
-	}
-	.count-slider {
-		right: -252px;
-	}
-}
-@media (max-width: 679px) {
-	.next {
-		right: -395px;
-	}
-	.imgBouton {
-		width: 29px;
-		height: 29px;
-	}
-	.count-slider {
-		right: -255px;
+		right: 291px;
 	}
 }
 @media (max-width: 667px) {
 	.next {
-		right: -343px;
+		right: 0px;
+	}
+	.prev {
+		right: 275px;
 	}
 	.imgBouton {
 		width: 28px;
 		height: 28px;
 	}
 	.count-slider {
-		right: -200px;
+		right: 136px;
 	}
 	.container-Slider {
 		margin-top: 20px;
@@ -214,29 +135,24 @@ $background-color_1: transparent;
 }
 @media (max-width: 626px) {
 	.next {
-		right: -282px;
-		top: 105px;
+		right: 8px;
+		top: 115px;
 	}
 	.prev {
-		right: 4px;
-		top: 47px;
-	}
-	.imgBouton {
-		width: 28px;
-		height: 28px;
+		right: 276px;
+		top: 115px;
 	}
 	.count-slider {
-		right: -200px;
+		top: 222px;
+		right: 148px;
+		font-size: 12px;
 	}
 	.slide {
 		width: 100%;
-		height: 100%;
-		image {
-			width: 335px;
-			height: 255px;
-		}
+		height: 255px;
 	}
-	.container-Slider {
+	img.slide {
+		width: 335px;
 		height: 255px;
 	}
 }
