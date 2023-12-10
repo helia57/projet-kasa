@@ -4,9 +4,9 @@ import arrow from "../../assets/arrow_up.svg";
 export default function Collapse({ title, content }) {
   const [toggle, setToggle] = useState(false);
 
-  const contentHeight = toggle ? 'auto' : '0';
+  const contentHeight = toggle ? '190px' : '0';
 
-  const marginBottom = toggle ? '40px' : '0';
+  const marginBottom = toggle ? '80px' : '0';
 
   return (
     <div className="collapseHeight" style={{ height: contentHeight,marginBottom }}>
@@ -19,7 +19,7 @@ export default function Collapse({ title, content }) {
             alt="show content"
           />
         </h3>
-        <div className={toggle ? 'collapse_content' : 'collapse_content_hidden'}>
+          <div className={toggle ? 'collapse_content' : 'collapse_content_hidden'}>
           {Array.isArray(content) ? content.map((item, index) => {
             return (
               <p key={index}>{item}</p>

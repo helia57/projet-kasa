@@ -11,7 +11,27 @@ $background-color_incolore: transparent;
 
 $font-family_1: Montserrat;
 
-    //font-weight: 500;
-	//letter-spacing: 0em;
-	//text-align: left;
-    
+@mixin text-layout ($font-family_1:'Montserrat',$font-weight: 500, $letter-spacing:0em, $text-align:left, $font-style: normal, $line-height:150%, $font-size: 18px ) {
+    font-family: $font-family_1;
+    font-weight: $font-weight;
+    font-style: $font-style;
+	letter-spacing: $letter-spacing;
+	text-align: $text-align;
+    line-height: $line-height;
+    font-size: $font-size;
+}
+
+@mixin border-radius ($border-top-left-radius:0px, $border-top-right-radius:0px, $border-bottom-right-radius:10px, $border-bottom-left-radius:10px) {
+    border-top-left-radius: $border-top-left-radius;
+    border-top-right-radius: $border-top-right-radius;
+    border-bottom-left-radius: $border-bottom-right-radius;
+	border-bottom-right-radius: $border-bottom-left-radius;
+
+}
+@mixin speudo-El ($display:flex, $flex-direction: row, $flex-wrap: wrap, $justify-content: center, $align-content:center ) {
+    display: $display;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    align-content: $align-content;
+}

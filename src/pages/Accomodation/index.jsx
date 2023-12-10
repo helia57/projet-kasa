@@ -40,8 +40,8 @@ const Accomodation = () => {
           </div>
         </div>
         <div className="wrapper-collapses">
-          <Collapse title="Description" content={currentLogement.description} />
-          <Collapse title="Équipements" content={currentLogement.equipments} />
+          <Collapse  title="Description" content={currentLogement.description} />
+          <Collapse  title="Équipements" content={currentLogement.equipments} />
         </div>
       </main>
     <Footer />

@@ -1,0 +1,70 @@
+@import './_config';
+
+.wrapper-collapses {
+	@include speudo-El (flex, row, wrap, space-between, space-between);
+   	margin-bottom: 74px;
+	
+}
+.collapseHeight {
+	@include speudo-El (flex, row, wrap, center, flex-start);
+    width: 48%;
+	height: auto;
+}
+.collapse_title {
+	@include speudo-El (flex, row, wrap, center, flex-end);
+    @include text-layout('Montserrat', 500, 0em, left, normal, 142.6%, 18px);
+	height: 39px;
+	
+}
+
+div.collapse {
+	@include speudo-El (flex, row, wrap, center, flex-start);
+   	background-color: $color_grisclaire;
+	color: $color_red;
+	height: 50px;
+    width: 100%;
+   
+	@include text-layout('Montserrat', 400, 0em, left, normal, 150%, 18px);
+	@include border-radius (0px, 0px, 10px, 10px);
+	
+}
+.about_main_collapse {
+	@include speudo-El (flex, row, wrap, center, center);
+	margin-bottom: 49px;
+	width: 120%;
+}
+div.collapse_content_hidden {
+	@include speudo-El (flex, row, wrap, center, center);
+	visibility: hidden;
+    opacity: 0;
+    height: 0;
+	
+}
+@media (max-width: 667px) {
+		
+	.about_main {
+		margin-bottom: 20px;
+	}
+	.about_main_collapse {
+		
+		margin-bottom: 40px;
+		
+	}
+	.collapse_title {
+		height: 30px;
+		border-radius: 5px;
+	}
+	.collapseHeight {
+		margin-top: 20px;
+	}
+	
+	h3 {
+		font-size: 13px;
+	}
+	div.collapse_content {
+		width: 100%;
+	}
+    div.collapse {
+        height: 30px;
+    }	
+}

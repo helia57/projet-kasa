@@ -4,26 +4,17 @@
 
 
 .description {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+    @include speudo-El (flex, row, wrap, space-between, center);
 	width: 100%;
-	justify-content: space-between;
 }
 .wrapper-presentation {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	gap: 15px;
-	align-content: flex-start;
+	@include speudo-El (flex, column, wrap, center, flex-start);
+   	gap: 15px;
+	
 }
 .wrapper-notation {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	align-content: flex-end;
-	height: 150px;
+	@include speudo-El (flex, column, wrap, flex-end, flex-end);
+   	height: 150px;
 	margin-top: 15px;
 }
 p {
@@ -31,95 +22,77 @@ p {
 }
 
 .wrapper-collapses {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-bottom: 74px;
-	justify-content: space-between;
-	height: -20px;
+	@include speudo-El (flex, row, wrap, space-between, space-between);
+   	margin-bottom: 74px;
+	width: 120%;
+	
 }
 .collapseHeight {
-	display: flex;
-	flex-wrap: wrap;
-	width: 48%;
+	@include speudo-El (flex, row, wrap, center, flex-start);
+    width: 48%;
 	height: auto;
 }
-.h3.collapse_title {
-	display: flex;
+.collapse_title {
+	@include speudo-El (flex, row, wrap, center, flex-end);
+    @include text-layout('Montserrat', 500, 0em, left, normal, 142.6%, 18px);
 	height: 39px;
-	align-content: flex-end;
+	
 }
 div.collapse_content {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	width: 100%;
-	height: auto;
-	margin-bottom: 160px;
-	transition: visibility 0.5s ease-in-out, opacity 0.4s ease-in-out, height 0.4s ease-in-out;
+	position: absolute;
+	height: 80px;
+	width: 250px;
+    gap: 5px;
+	width: auto;
+    letter-spacing: 1px;
+    visibility: visible;
+    opacity: 1;
+    
+    padding: 10px;
+	margin-top: 39px;
+	line-height: 142.6%;
+	font-size: clamp(12px, 2vw, 16px);
+	text-align: justify;
+	background-color: $color_grisclaire;
+	transition: 600ms;
 }
 div.collapse {
-	display: flex;
-	flex-wrap: wrap;
-	background-color: $color_grisclaire;
+	@include speudo-El (flex, row, wrap, center, flex-start);
+   	background-color: $color_grisclaire;
 	color: $color_red;
-	height: 50px;
-	font-family: $font-family_1;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 150%;
-	width: 100%;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	margin: 30px 47px;
-	align-items: flex-start;
-	justify-content: center;
+	height: 25px;
+    width: 100%;
+   
+	@include text-layout('Montserrat', 400, 0em, left, normal, 150%, 18px);
+	@include border-radius (0px, 0px, 10px, 10px);
+	
 }
 .about_main_collapse {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+	@include speudo-El (flex, row, wrap, center, center);
 	margin-bottom: 49px;
-	justify-content: center;
 	width: 120%;
 }
 div.collapse_content_hidden {
-	display: flex;
-	flex-wrap: wrap;
+	@include speudo-El (flex, row, wrap, center, center);
 	visibility: hidden;
-	opacity: 0;
-	height: 0;
+    opacity: 0;
+    height: 0;
+	
 }
 .title-appart {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: flex-start;
+	@include speudo-El (flex, row, wrap, flex-start, flex-start);
 	color: $color_red;
-	font-family: $font-family_1;
-	font-size: 36px;
-	font-weight: 500;
-	letter-spacing: 0em;
-	text-align: left;
+	@include text-layout('Montserrat', 500, 0em, left, normal, 150%, 36px);
+	
 }
 .sous-title-appart {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	@include speudo-El (flex, row, wrap, flex-start, flex-start);
 	width: 376px;
 	height: 51px;
 	padding: 10px;
 	color: $color_red;
-	font-family: $font-family_1;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 26px;
-	letter-spacing: 0em;
-	text-align: left;
+	@include text-layout('Montserrat', 500, 0em, left, normal, 0, 18px);
+	
 }
 @media (max-width: 667px) {
 	
@@ -127,29 +100,26 @@ div.collapse_content_hidden {
 		width: 335px;
 	}
 	.title-appart {
-		font-size: 16px;
-        width: 335px;
+		@include text-layout('Montserrat', 500, 0em, left, normal, 150%, 16px);
+        width: 100%;
 	}
 	h2 {
 		padding: 0px;
 	}
 	.sous-title-appart {
-		font-size: 14px;
+		@include text-layout('Montserrat', 500, 0em, left, normal, 0, 14px);
 		padding: 0px;
 	}
 	.wrapper-notation {
-		flex-direction: row-reverse;
-		height: 55px;
-		align-items: flex-end;
+		@include speudo-El (flex, row-reverse, wrap, center, flex-end);
+       	height: 55px;
+		
 	}
-	.wrapper-collapses {
-		width: 335px;
-		height: 100px;
-	}
+	
 	.collapseHeight {
 		flex-direction: column;
 		width: 335px;
-		align-content: center;
+		align-content: flex-start;
 	}
 	.collapse {
 		margin: 0px;
@@ -159,6 +129,6 @@ div.collapse_content_hidden {
 	}
 	div.collapse_content {
 		font-size: 13px;
-		line-height: 130%;
+		
 	}
 }
