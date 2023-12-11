@@ -28,7 +28,7 @@ p {
 	
 }
 .collapseHeight {
-	@include speudo-El (flex, row, wrap, center, flex-start);
+	@include speudo-El (flex, row, wrap, flex-start, flex-start);
     width: 48%;
 	height: auto;
 }
@@ -44,14 +44,11 @@ div.collapse_content {
 	width: 250px;
     gap: 5px;
 	width: auto;
-    letter-spacing: 1px;
-    visibility: visible;
-    opacity: 1;
-    
+    font-weight: 400;
     padding: 10px;
 	margin-top: 39px;
 	line-height: 142.6%;
-	font-size: clamp(12px, 2vw, 16px);
+	font-size: 18px;
 	text-align: justify;
 	background-color: $color_grisclaire;
 	transition: 600ms;
@@ -94,6 +91,15 @@ div.collapse_content_hidden {
 	@include text-layout('Montserrat', 500, 0em, left, normal, 0, 18px);
 	
 }
+@media (max-width: 1330px) {
+	.wrapper-notation {
+		flex-direction: row-reverse;
+		width: 565px;
+		justify-content: space-between;
+	}
+	
+}
+
 @media (max-width: 667px) {
 	
 	.wrapper-presentation {
@@ -115,11 +121,16 @@ div.collapse_content_hidden {
        	height: 55px;
 		
 	}
-	
+	.wrapper-collapses {
+        margin-top: 0px;
+		width: 335px;
+		height: 120px;
+	}
 	.collapseHeight {
 		flex-direction: column;
 		width: 335px;
 		align-content: flex-start;
+		gap:5px;
 	}
 	.collapse {
 		margin: 0px;

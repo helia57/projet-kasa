@@ -5,16 +5,10 @@
 
 
 div.collapse {
-	
+	@include text-layout('Montserrat', 400, 0em, left, normal, 150%, 18px);
 	position: relative;
 	background-color: $color_grisclaire;
 	color: $color_red;
-	
-	font-family: $font-family_1;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 150%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	align-items: flex-start;
@@ -26,8 +20,6 @@ div.collapse {
 	height: auto;
 }
 .about_main {
-	
-	flex-wrap: wrap;
 	position: relative;
 	right: 37%;
 	margin-bottom: 20px;
@@ -43,76 +35,49 @@ div.collapse {
 	width: 100%;
 }
 .collapse_title {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: space-between;
+	@include speudo-El (flex, row, wrap,  space-between,  center);
 	align-items: flex-start;
 	background-color: $color_red;
-	
+	z-index:0;
 	width: 100%;
 	padding: 10px 20px 10px 15px;
-	border-radius: 10px;
+	border-radius: 10px; 
 }
-.collapseHeight {
-	@include speudo-El (flex, row, wrap, center, flex-start);
-    width: 49%;
-	height: auto;
-}
+
 div.collapse_content {
-	position: absolute;
-	height: 309px;
-	width: 100%;
-    gap: 5px;
-	letter-spacing: 1px;
-    visibility: visible;
-    opacity: 1;
-    border-radius: 10px;
-    padding: 10px;
 	
-	line-height: 142.6%;
+	position: absolute;
+	height: 319px;
+	width: 100%;
+	border-radius: 10px;
+    padding: 10px;
 	text-align: justify;
 	background-color: $color_grisclaire;
 	transition: 600ms;
-	
+	z-index: -1;
 }
 
 h3 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	@include text-layout('Montserrat', 400, 0, left, normal, 142.6%, 24px);
+	@include speudo-El (flex, row, wrap,  center,  center);
 	color: $color_1;
-	font-family: $font-family_1;
-	font-size: 24px;
-	font-style: normal;
-	font-weight: 400;
 	border-radius: 10px;
 	padding: 0px 20px;
 	width: 100%;
 	
 }
 .collapse_content_hidden {
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	display: flex;
-	flex-wrap: wrap;
 	visibility: hidden;
-	opacity: 0;
-	height: 0;
 	
+	top:100%;
+	transition: translateY(-100%);
 	
 }
 .arrow_up {
-	display: flex;
-	flex-wrap: wrap;
 	transform: rotate(0deg);
 	transition: all 0.2s ease-in-out;
 }
 .arrow_down {
-	display: flex;
-	flex-wrap: wrap;
 	transform: rotate(180deg);
 	transition: all 0.2s ease-in-out;
 }
@@ -128,9 +93,11 @@ h3 {
 	}	
 	div.collapse {
 		width: 335px;
+		
 	}
 	.about_main {
-		margin-bottom: 20px;
+		
+		right:0;
 	}
 	.about_main_collapse {
 		
@@ -142,17 +109,20 @@ h3 {
 		width: 100%;
 		border-radius: 5px;
 		font-size: 13px;
+		
 	}
 	.collapseHeight {
-		margin-top: 20px;
+		margin-bottom: 40px;
 		width: 100%;
+		margin-top: 25px;
+		
 	}
 	
 	
 	div.collapse_content {
 		width: 100%;
 		top:-8px;
-		height: 207px;
+		height: 183px;
 		margin-bottom: 170px;
 	}	
 }

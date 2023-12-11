@@ -5,10 +5,7 @@
 
 
 .gallery-wrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
+	@include speudo-El (flex, row, wrap, center, center);
 	gap: 50px;
 	border-radius: 25px;
 	background: $color_grisclaire;
@@ -16,14 +13,14 @@
 	padding: 56px 50px;
 }
 .gallery_cards {
-	display: flex;
+	
 	text-decoration: none;
 	width: 340px;
 	height: 340px;
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.20) 100%);
 }
 img.flat {
-	display: flex;
+	
 	width: 340px;
 	height: 340px;
 	border-radius: 10px;
@@ -32,19 +29,14 @@ img.flat {
 	mix-blend-mode: darken;
 }
 h4 {
-	display: flex;
-	flex-wrap: wrap;
+	
 	position: relative;
 	bottom: 54px;
 	right: -23px;
 	width: 300px;
 	color: $color_1;
-	font-family: $font-family_1;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 142.6%;
 	text-decoration: none;
+	@include text-layout('Montserrat', 500, 0em, left, normal, 142.6%, 18px);
 }
 div {
 	display: flex;
@@ -60,7 +52,6 @@ img {
 }
 @media (max-width: 667px) {
 	body {
-		display: flex;
 		flex-direction: column;
 		width: 667px;
 		margin: auto;
@@ -85,7 +76,5 @@ img {
 	img.flat {
 		height: 255px;
 	}
-	h4 {
-		font-size: 18px;
-	}
+	
 }
