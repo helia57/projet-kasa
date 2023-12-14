@@ -22,20 +22,21 @@ p {
 }
 
 .wrapper-collapses {
-	@include speudo-El (flex, row, wrap, space-between, space-between);
+	@include speudo-El (flex, row, nowrap, space-between, space-between);
    	margin-bottom: 74px;
 	width: 120%;
 	
 }
 .collapseHeight {
 	@include speudo-El (flex, row, wrap, flex-start, flex-start);
-    width: 48%;
+    width: 50%;
 	height: auto;
 }
 .collapse_title {
 	@include speudo-El (flex, row, wrap, center, flex-end);
     @include text-layout('Montserrat', 500, 0em, left, normal, 142.6%, 18px);
 	height: 39px;
+	gap:10px;
 	
 }
 div.collapse_content {
@@ -59,6 +60,7 @@ div.collapse {
 	color: $color_red;
 	height: 25px;
     width: 100%;
+	
    
 	@include text-layout('Montserrat', 400, 0em, left, normal, 150%, 18px);
 	@include border-radius (0px, 0px, 10px, 10px);
