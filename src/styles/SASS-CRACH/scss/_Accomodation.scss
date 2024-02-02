@@ -36,7 +36,7 @@ p {
 	@include speudo-El (flex, row, wrap, center, flex-end);
     @include text-layout('Montserrat', 500, 0em, left, normal, 142.6%, 18px);
 	height: 39px;
-	gap:10px;
+	
 	
 }
 div.collapse_content {
