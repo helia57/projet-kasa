@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/projet-kasa/static/css/main.8b1695b6.css",
+    "main.js": "/projet-kasa/static/js/main.06f263d7.js",
+    "static/media/paysage-montagne.png": "/projet-kasa/static/media/paysage-montagne.abab3f12f4cb82f1dfa1.png",
+    "static/media/paysage_mer.png": "/projet-kasa/static/media/paysage_mer.d00ae7dd3ef927bb988d.png",
+    "static/media/logo-header-mobile.svg": "/projet-kasa/static/media/logo-header-mobile.5f47a3517cd29be51d18a878addd6eac.svg",
+    "static/media/logoFooter.svg": "/projet-kasa/static/media/logoFooter.ee689fd9409d1b5a898b4247819d8a00.svg",
+    "static/media/stars-gray.svg": "/projet-kasa/static/media/stars-gray.377ea717c5d661f2cad398b2acb538e8.svg",
+    "static/media/stars-red.svg": "/projet-kasa/static/media/stars-red.30b8963e66a47777ef47296f505567be.svg",
+    "index.html": "/projet-kasa/index.html",
+    "static/media/arrow_up.svg": "/projet-kasa/static/media/arrow_up.a8b9b5ca78cd5124727100163f345f20.svg",
+    "static/media/rightArrow.svg": "/projet-kasa/static/media/rightArrow.dfebbffec6d3865e8655ca0c81ffd33c.svg",
+    "static/media/leftArrow.svg": "/projet-kasa/static/media/leftArrow.f3f0bb2c041648c34b954a31fd36c006.svg",
+    "main.8b1695b6.css.map": "/projet-kasa/static/css/main.8b1695b6.css.map",
+    "main.06f263d7.js.map": "/projet-kasa/static/js/main.06f263d7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8b1695b6.css",
+    "static/js/main.06f263d7.js"
+  ]
+}
